@@ -110,7 +110,7 @@ $(".list-group").on("blur", "textarea", function() {
 
   //get the task's position in the list of other li elements
   var index = $(this)
-    .closest("list-group-item")
+    .closest(".list-group-item")
     .index();
 
   tasks[status][index].text = text;
@@ -160,7 +160,7 @@ $(".list-group").on("blur", "input[type='text']", function() {
 
   //get the task's position in the list of other li elements
   var index = $(this)
-    .closest("list-group-item")
+    .closest(".list-group-item")
     .index();
 
   // update task in array and re-save to local storage
